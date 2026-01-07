@@ -6,7 +6,7 @@
 
 It creates a semi-transparent, perspective-corrected layer on top of your video player, allowing you to visualize tactical zones, net distribution, and service trajectories directly on the game feed.
 
-![ZoneMap Main Screenshot](images/preview.png)
+![ZoneMap Main Screenshot](preview.png)
 *(Place a screenshot of the app in action here)*
 
 ## ✨ Key Features
@@ -95,7 +95,7 @@ This project is proprietary. Unauthorized copying or distribution is strictly pr
 
 L'applicazione crea un livello semitrasparente, corretto prospetticamente, sopra il tuo video player o software di scout, permettendo di visualizzare zone tattiche, distribuzione a rete e traiettorie di battuta direttamente sul flusso di gioco.
 
-![Anteprima ZoneMap](images/preview.png)
+![Anteprima ZoneMap](preview.png)
 *(Sostituisci questo percorso con uno screenshot reale dell'app in azione)*
 
 ## ✨ Funzionalità Principali
