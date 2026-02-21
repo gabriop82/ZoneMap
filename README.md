@@ -17,6 +17,12 @@ to the court in real time.
 
 ------------------------------------------------------------------------
 
+<p align="center">
+  <img src="preview.png" width="900">
+</p>
+
+------------------------------------------------------------------------
+
 ## 📊 Use Case
 
 ZoneMap can be used for:
@@ -147,6 +153,12 @@ La prospettiva della telecamera può alterare la percezione spaziale e
 rendere meno precisa l'interpretazione delle zone.\
 ZoneMap fornisce un overlay prospetticamente corretto, allineato al
 campo in tempo reale.
+
+------------------------------------------------------------------------
+
+<p align="center">
+  <img src="preview.png" width="900">
+</p>
 
 ------------------------------------------------------------------------
 
