@@ -1,177 +1,248 @@
-########### English ###########
+# ZoneMap Suite
 
-# 🏐 ZoneMap Suite
+Advanced tactical overlay for volleyball video analysis, designed to
+support scouts and analysts while using Data Volley or any video player.
 
-**ZoneMap Suite** is a professional video analysis overlay tool designed for Volleyball Scouts and Data Volley users. 
+------------------------------------------------------------------------
 
-It creates a semi-transparent, perspective-corrected layer on top of your video player, allowing you to visualize tactical zones, net distribution, and service trajectories directly on the game feed.
+## 🎯 Overview
 
-![ZoneMap Main Screenshot](preview.png)
-*(Place a screenshot of the app in action here)*
+ZoneMap Suite is a tactical overlay system that improves court zone
+interpretation during volleyball video analysis.
 
-## ✨ Key Features
+Camera perspective often distorts spatial perception, making geometric
+and tactical consistency difficult during scouting.\
+ZoneMap solves this by providing a perspective-correct overlay aligned
+to the court in real time.
 
-### 🎯 1. Perspective Correction
-- **6-Point Calibration:** Easily align the grid to the court perspective using 6 draggable handles (Far Baseline, Net, Near Baseline).
-- **Homography:** Uses advanced mathematics to ensure zones remain accurate even with angled camera views.
+------------------------------------------------------------------------
 
-### 📐 2. Dual Operation Modes
-- **Standard Mode:** Classic 3x3 Volleyball Zoning (Zones 1-9) with automatic mirroring.
-- **Custom Mode:** A powerful 2D Vector Editor to draw specific tactical areas (conflict zones, defensive spots).
+## 📊 Use Case
 
-### 🏐 3. Advanced Tools
-- **Net Grid:** Customizable horizontal divisions (e.g., 9 sectors) to analyze set distribution or attack paths.
-- **Service Zones:** Automatic extension of court lines to visualize service corridors (5 zones).
-- **Global Visibility:** "Panic button" to hide/show all overlays instantly.
+ZoneMap can be used for:
 
-### 🎨 4. Full Customization
-- **Colors & Transparency:** Adjust opacity for lines, numbers, and background fills.
-- **Click-Through:** The overlay is transparent to mouse clicks, allowing you to interact with DataVolley or the video player underneath.
+-   Reception pattern analysis\
+-   Defensive gap visualization\
+-   Setter distribution analysis\
+-   Conflict zone tracking\
+-   Tactical area highlighting
 
----
+Designed for real operational use during match preparation and live
+analysis.
+
+------------------------------------------------------------------------
+
+## 🚀 Features
+
+### V1 -- Perspective Overlay
+
+-   Deformable 3x3 grid
+-   Homography-based perspective correction
+-   Always-on-top overlay
+-   Click-through mode
+
+### V2 -- ZoneMap Suite
+
+-   Custom 2D Tactical Editor
+-   Real-time perspective projection
+-   Multi-language support (IT / EN)
+-   JSON configuration persistence
+-   DPI optimization for high-resolution displays
+-   Integrated feedback system
+-   F8 / F9 quick visibility shortcuts
+
+------------------------------------------------------------------------
+
+## 🛠 Technical Architecture
+
+-   Homography matrix transformations (numpy)
+-   GUI built with PySide6 (Qt for Python)
+-   Windows system integration via pywin32
+-   JSON-based configuration storage (AppData)
+-   Modular Work Package (WP) structure
+-   Structured documentation for each development block
+
+------------------------------------------------------------------------
+
+## 🧠 Development Approach
+
+This project applies structured methodology to rapid development:
+
+-   Triple Constraint (Time, Cost, Quality)
+-   WBS-based micro Work Packages
+-   Markdown documentation for each WP
+-   AI used as a development accelerator
+-   Iterative refinement based on real-world usage
+
+First usable version built in less than one working day.
+
+------------------------------------------------------------------------
 
 ## 📥 Installation
 
-1. Go to the [**Releases**](https://github.com/gabriop82/ZoneMap/releases) page.
-2. Download the latest installer: `ZoneMap_Setup_v2.0.exe`.
-3. Run the installer and follow the instructions.
+1.  Go to the Releases page:\
+    https://github.com/gabriop82/ZoneMap/releases
+2.  Download the latest installer.
+3.  Run the setup file and follow instructions.
 
----
+------------------------------------------------------------------------
 
 ## 🚀 How to Use
 
-### First Run
-Upon first launch, a Wizard will ask for your Team Name and preferences. This helps organize analytics and default settings.
+### Calibration
 
-### Controls & Calibration
-1. **Launch the App:** You will see the Overlay and the Configuration Panel.
-2. **Align the Court:** Drag the **6 Yellow Dots** on the overlay to match the court corners and the net line in your video.
-3. **Toggle Edit Mode:**
-   - **EDIT MODE:** You can move the dots and change configurations. The overlay intercepts clicks.
-   - **OVERLAY MODE:** The yellow dots disappear. Clicks pass through to the video player below.
+1.  Launch the app.
+2.  Drag the 6 yellow control points to match court corners and net
+    line.
+3.  Switch between:
+    -   EDIT MODE (adjust overlay)
+    -   OVERLAY MODE (click-through enabled)
 
-### Standard vs Custom
-*   **Standard:** Use the dropdowns in the Control Panel to highlight specific zones (1-9) on the Near or Far court.
-*   **Custom:** Switch to "Custom Mode". Use the **2D Editor** to draw rectangles. They will be projected in real-time onto the court. You can save and load different layouts (e.g., "Reception Layout", "Defense Layout").
+### Standard Mode
 
----
+Select predefined zones (1--9) for near or far court.
+
+### Custom Mode
+
+Use the 2D Editor to draw tactical areas.\
+Shapes are projected in real time respecting perspective.
+
+------------------------------------------------------------------------
 
 ## ⌨️ Shortcuts
 
-| Key | Action |
-| :--- | :--- |
-| **F8** | Toggle Global Visibility (Show/Hide everything) |
-| **F9** | Show/Minimize Configuration Panel |
+  Key   Action
+  ----- -------------------------------
+  F8    Toggle global visibility
+  F9    Show/Hide configuration panel
 
----
+------------------------------------------------------------------------
 
-## 🛠️ Technical Stack
+## 📄 License
 
-Built with Python and modern libraries for high performance:
-*   **GUI:** [PySide6](https://pypi.org/project/PySide6/) (Qt for Python)
-*   **System Integration:** `pywin32` for advanced Windows API calls (Click-through, Always-on-top).
-*   **Math:** `numpy` for homography and vector calculations.
-*   **Telemetry:** Custom integration with Firebase Realtime Database.
+ZoneMap Suite is distributed as Freeware.
 
----
+You are allowed to: - Download and use the executable. - Share the
+original installer in its unmodified form.
 
-## 👨‍💻 Author
+You are not allowed to: - Modify, decompile, reverse engineer, or
+attempt to reconstruct the source code. - Redistribute modified
+versions. - Use the software for commercial purposes without written
+authorization.
 
-Developed by **Gabrio Piozzi**.
+The source code is not publicly available.
 
-*   [LinkedIn](https://www.linkedin.com/in/gabriopiozzi/)
-*   [Instagram](https://www.instagram.com/piozzigabrio/)
+© 2025 Gabrio Piozzi. All rights reserved.
 
----
+------------------------------------------------------------------------
 
-### 📄 License
-This project is free and you can download and share the installer.
+# 🇮🇹 Versione Italiana
 
-########### Italiano ###########
+## 🎯 Panoramica
 
-# 🏐 ZoneMap Suite
+ZoneMap Suite è un overlay tattico avanzato per l'analisi video nel
+volley.
 
-**ZoneMap Suite** è uno strumento professionale di overlay grafico per l'analisi video, progettato specificamente per Scoutman di Pallavolo e utilizzatori di Data Volley.
+La prospettiva della telecamera può alterare la percezione spaziale e
+rendere meno precisa l'interpretazione delle zone.\
+ZoneMap fornisce un overlay prospetticamente corretto, allineato al
+campo in tempo reale.
 
-L'applicazione crea un livello semitrasparente, corretto prospetticamente, sopra il tuo video player o software di scout, permettendo di visualizzare zone tattiche, distribuzione a rete e traiettorie di battuta direttamente sul flusso di gioco.
+------------------------------------------------------------------------
 
-![Anteprima ZoneMap](preview.png)
-*(Sostituisci questo percorso con uno screenshot reale dell'app in azione)*
+## 📊 Casi d'Uso
 
-## ✨ Funzionalità Principali
+-   Analisi ricezione
+-   Visualizzazione buchi difensivi
+-   Studio distribuzione del palleggiatore
+-   Identificazione zone di conflitto
+-   Evidenziazione aree tattiche
 
-### 🎯 1. Correzione Prospettica
-- **Calibrazione a 6 Punti:** Allinea perfettamente la griglia alla prospettiva del campo trascinando 6 maniglie (Linea di Fondo Lontana, Rete, Linea di Fondo Vicina).
-- **Omografia:** Utilizza calcoli matematici avanzati per garantire che le zone rimangano precise anche con inquadrature angolate o basse.
+Progettato per utilizzo operativo reale in gara e in preparazione
+partita.
 
-### 📐 2. Doppia Modalità Operativa
-- **Modalità Standard:** La classica divisione del campo in 9 Zone (3x3) con specchiamento automatico tra campo vicino e lontano.
-- **Modalità Custom:** Un potente **Editor Vettoriale 2D** per disegnare aree tattiche specifiche (es. zone di conflitto, buchi difensivi) che vengono proiettate in tempo reale sul video.
+------------------------------------------------------------------------
 
-### 🏐 3. Strumenti Avanzati
-- **Griglia Rete:** Divisione orizzontale personalizzabile (es. 9 settori) per analizzare la distribuzione del palleggiatore o le traiettorie d'attacco.
-- **Zone di Battuta:** Estensione automatica delle linee laterali per visualizzare i corridoi di servizio (5 zone).
-- **Visibilità Globale:** Un "Panic button" per mostrare/nascondere istantaneamente tutti gli overlay.
+## 🚀 Funzionalità
 
-### 🎨 4. Personalizzazione Completa
-- **Colori e Trasparenza:** Regola l'opacità di linee, numeri e riempimenti per adattarsi a qualsiasi video.
-- **Click-Through:** In modalità "Overlay", la finestra diventa trasparente ai click del mouse, permettendoti di interagire liberamente con Data Volley o il player sottostante.
+### V1 -- Overlay Prospettico
 
----
+-   Griglia deformabile 3x3
+-   Correzione prospettica tramite omografia
+-   Overlay sempre in primo piano
+-   Modalità click-through
+
+### V2 -- ZoneMap Suite
+
+-   Editor Tattico 2D
+-   Proiezione prospettica in tempo reale
+-   Supporto multilingua
+-   Salvataggio configurazioni JSON
+-   Ottimizzazione DPI
+-   Sistema feedback integrato
+-   Scorciatoie F8 / F9
+
+------------------------------------------------------------------------
+
+## 🛠 Architettura Tecnica
+
+-   Trasformazioni tramite matrici di omografia (numpy)
+-   GUI sviluppata con PySide6 (Qt for Python)
+-   Integrazione Windows tramite pywin32
+-   Persistenza configurazioni in JSON (AppData)
+-   Struttura modulare per Work Package
+-   Documentazione tecnica per ciascun WP
+
+------------------------------------------------------------------------
+
+## 🧠 Approccio di Sviluppo
+
+Il progetto applica metodologie strutturate allo sviluppo rapido:
+
+-   Triplo Vincolo (Tempo, Costo, Qualità)
+-   Scomposizione tramite WBS
+-   Documentazione Markdown per ogni WP
+-   AI come acceleratore, non sostituto del metodo
+-   Iterazioni basate su utilizzo reale
+
+Prima versione funzionante realizzata in meno di una giornata
+lavorativa.
+
+------------------------------------------------------------------------
 
 ## 📥 Installazione
 
-1. Vai alla pagina delle [**Releases**](https://github.com/gabriop82/ZoneMap/releases).
-2. Scarica l'ultimo installer: `ZoneMap_Setup_v6.0.exe`.
-3. Avvia l'installazione e segui le istruzioni a schermo.
+1.  Vai alla pagina Releases:\
+    https://github.com/gabriop82/ZoneMap/releases
+2.  Scarica l'installer più recente.
+3.  Avvia l'installazione e segui le istruzioni.
 
----
+------------------------------------------------------------------------
 
-## 🚀 Come si usa
+## 🚀 Utilizzo
 
-### Primo Avvio
-Alla prima apertura, un Wizard ti chiederà il nome della tua Squadra e alcune preferenze. Questi dati servono per organizzare le statistiche di utilizzo e impostare i default.
+### Calibrazione
 
-### Controlli e Calibrazione
-1. **Avvia l'App:** Vedrai l'Overlay e il Pannello di Configurazione.
-2. **Allinea il Campo:** Trascina i **6 Pallini Gialli** sull'overlay per farli coincidere con gli angoli del campo e la linea di rete nel video.
-3. **Cambia Modalità (Tasto Edit):**
-   - **MODALITÀ MODIFICA:** I pallini sono visibili e puoi spostarli. L'overlay intercetta i click.
-   - **MODALITÀ OVERLAY:** I pallini spariscono per lasciare la visuale pulita. I click del mouse passano attraverso (Click-Through).
+1.  Avvia l'app.
+2.  Trascina i 6 punti gialli per allineare il campo.
+3.  Alterna tra:
+    -   MODALITÀ MODIFICA
+    -   MODALITÀ OVERLAY (click-through)
 
-### Standard vs Custom
-*   **Standard:** Usa i menu a tendina nel pannello per evidenziare zone specifiche (1-9) sul campo Vicino o Lontano.
-*   **Custom:** Passa alla modalità "Custom". Usa l'**Editor 2D** per disegnare rettangoli o aree. Verranno proiettati sul campo rispettando la prospettiva. Puoi salvare e caricare diversi layout (es. "Schema Ricezione", "Schema Difesa").
+### Modalità Standard
 
----
+Seleziona le zone 1--9 per campo vicino o lontano.
 
-## ⌨️ Scorciatoie da Tastiera
+### Modalità Custom
 
-| Tasto | Azione |
-| :--- | :--- |
-| **F8** | Attiva/Disattiva Visibilità Globale (Nascondi tutto) |
-| **F9** | Mostra/Minimizza il Pannello di Configurazione |
+Usa l'Editor 2D per disegnare aree tattiche, proiettate in tempo reale
+sul campo.
 
----
+------------------------------------------------------------------------
 
-## 🛠️ Stack Tecnologico
+## ⌨️ Scorciatoie
 
-Sviluppato in Python con librerie moderne per massime prestazioni:
-*   **GUI:** [PySide6](https://pypi.org/project/PySide6/) (Qt for Python)
-*   **Integrazione Sistema:** `pywin32` per la gestione avanzata delle finestre Windows (Click-through, Always-on-top).
-*   **Matematica:** `numpy` per calcoli vettoriali e omografia.
-*   **Telemetria:** Integrazione personalizzata con Firebase Realtime Database.
-
----
-
-## 👨‍💻 Autore
-
-Sviluppato da **Gabrio Piozzi**.
-
-*   [LinkedIn](https://www.linkedin.com/in/gabriopiozzi/)
-*   [Instagram](https://www.instagram.com/piozzigabrio/)
-
----
-
-### 📄 Licenza
-Questo progetto è free è possibile scaricare e condividere l'installer.
+  Tasto   Azione
+  ------- -----------------------------------------
+  F8      Attiva/Disattiva visibilità globale
+  F9      Mostra/Nasconde pannello configurazione
