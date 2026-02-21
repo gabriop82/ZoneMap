@@ -85,7 +85,7 @@ Developed by **Gabrio Piozzi**.
 ---
 
 ### 📄 License
-This project is proprietary. Unauthorized copying or distribution is strictly prohibited.
+This project is free and you can download and share the installer.
 
 ########### Italiano ###########
 
@@ -174,4 +174,4 @@ Sviluppato da **Gabrio Piozzi**.
 ---
 
 ### 📄 Licenza
-Questo progetto è proprietario. La copia o distribuzione non autorizzata è vietata.
+Questo progetto è free è possibile scaricare e condividere l'installer.
