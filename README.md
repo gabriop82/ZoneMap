@@ -1,260 +1,105 @@
-# ZoneMap Suite
+<div align="center">
 
-Advanced tactical overlay for volleyball video analysis, designed to
-support scouts and analysts while using Data Volley or any video player.
+# 🏐 ZoneMap Suite 3.0.4
 
-------------------------------------------------------------------------
+### Tactical overlay and DataVolley file validation for volleyball professionals
 
-## 🎯 Overview
+**Overlay tattico e validazione dei file DataVolley per i professionisti della pallavolo**
 
-ZoneMap Suite is a tactical overlay system that improves court zone
-interpretation during volleyball video analysis.
+[🇮🇹 Italiano](#-italiano) · [🇬🇧 English](#-english) · [📦 Latest release](https://github.com/gabriop82/ZoneMap/releases/latest)
 
-Camera perspective often distorts spatial perception, making geometric
-and tactical consistency difficult during scouting.\
-ZoneMap solves this by providing a perspective-correct overlay aligned
-to the court in real time.
+</div>
 
-------------------------------------------------------------------------
+![ZoneMap Suite](https://github.com/gabriop82/ZoneMap/releases/download/v3.0.4/ZoneMap-3.png)
 
-<p align="center">
-  <img src="preview.png" width="900">
-</p>
+---
 
-------------------------------------------------------------------------
+## 🇮🇹 Italiano
 
-## 📊 Use Case
+ZoneMap Suite è un'applicazione desktop Windows che affianca lo scoutman e lo staff tecnico nell'analisi video e nel controllo della qualità dei dati. Riunisce due strumenti complementari: **Overlay Tattico** e **DVW Validator**.
 
-ZoneMap can be used for:
+### 📐 Overlay Tattico
 
--   Reception pattern analysis\
--   Defensive gap visualization\
--   Setter distribution analysis\
--   Conflict zone tracking\
--   Tactical area highlighting
+Disegna e proietta zone personalizzate sul campo rispettando la prospettiva dell'inquadratura. L'overlay può essere utilizzato sopra Data Volley o qualsiasi video mostrato sul desktop.
 
-Designed for real operational use during match preparation and live
-analysis.
+- Campo vicino, campo lontano e zona di battuta configurabili.
+- Editor libero per aree tattiche, etichette e colori.
+- Controlli separati per trasparenza di linee, numeri e riempimenti.
+- Modalità click-through per lavorare nell'applicazione sottostante.
+- Salvataggio e caricamento delle configurazioni.
+- Compatibilità con le configurazioni di ZoneMap 2.
 
-------------------------------------------------------------------------
+![Overlay sopra Data Volley](https://github.com/gabriop82/ZoneMap/releases/download/v3.0.4/ZonaMap-Overlay-DataVolley.png)
 
-## 🚀 Features
+### ✅ DVW Validator
 
-### V1 -- Perspective Overlay
+Analizza i file `.dvw` senza modificare o completare manualmente i dati originali. Gli esiti distinguono gli errori dalle situazioni legittime che meritano una verifica.
 
--   Deformable 3x3 grid
--   Homography-based perspective correction
--   Always-on-top overlay
--   Click-through mode
+- **29 controlli** sui file di scouting DataVolley.
+- Verifica di dati gara, sestetti, palleggiatori, rotazioni e punteggio.
+- Rilevamento di punti senza tocchi, battute anomale e pause nel tempo video.
+- Analisi di singoli file o intere cartelle.
+- Cronologia basata su SHA-256 e rilevamento dei file modificati.
+- Esportazione del rapporto in formato `.txt`.
+- Inversione delle squadre in un file separato, solo con tutti i dati obbligatori.
 
-### V2 -- ZoneMap Suite
+![DVW Validator](https://github.com/gabriop82/ZoneMap/releases/download/v3.0.4/ZoneMap-3-Validator.png)
 
--   Custom 2D Tactical Editor
--   Real-time perspective projection
--   Multi-language support (IT / EN)
--   JSON configuration persistence
--   DPI optimization for high-resolution displays
--   Integrated feedback system
--   F8 / F9 quick visibility shortcuts
+### 📥 Download
 
-------------------------------------------------------------------------
+- [Pagina ufficiale ZoneMap in italiano](https://www.mia-volley.com/it/zonemap)
+- [Scarica l'ultima release da GitHub](https://github.com/gabriop82/ZoneMap/releases/latest)
+- [Scopri MIA Volley in italiano](https://www.mia-volley.com/it/)
 
-## 🛠 Technical Architecture
+---
 
--   Homography matrix transformations (numpy)
--   GUI built with PySide6 (Qt for Python)
--   Windows system integration via pywin32
--   JSON-based configuration storage (AppData)
--   Modular Work Package (WP) structure
--   Structured documentation for each development block
+## 🇬🇧 English
 
-------------------------------------------------------------------------
+ZoneMap Suite is a Windows desktop application that helps volleyball scouts and coaching staff with video analysis and data-quality control. It combines two complementary tools: the **Tactical Overlay** and the **DVW Validator**.
 
-## 🧠 Development Approach
+### 📐 Tactical Overlay
 
-This project applies structured methodology to rapid development:
+Draw and project custom court zones while preserving the perspective of the camera view. The overlay works over Data Volley or any video displayed on the desktop.
 
--   Triple Constraint (Time, Cost, Quality)
--   WBS-based micro Work Packages
--   Markdown documentation for each WP
--   AI used as a development accelerator
--   Iterative refinement based on real-world usage
+- Configurable near court, far court and service area.
+- Free-form editor for tactical areas, labels and colors.
+- Separate transparency controls for lines, numbers and fills.
+- Click-through mode for interacting with the application underneath.
+- Save and load overlay configurations.
+- Compatibility with ZoneMap 2 configurations.
 
-First usable version built in less than one working day.
+![Tactical overlay on the desktop](https://github.com/gabriop82/ZoneMap/releases/download/v3.0.4/ZonaMap-Overlay-desktop.png)
 
-------------------------------------------------------------------------
+### ✅ DVW Validator
 
-## 📥 Installation
+Analyze `.dvw` files without manually changing or completing their original data. Results clearly separate errors from legitimate situations that deserve review.
 
-1.  Go to the Releases page:\
-    https://github.com/gabriop82/ZoneMap/releases
-2.  Download the latest installer.
-3.  Run the setup file and follow instructions.
+- **29 checks** for DataVolley scouting files.
+- Validation of match information, lineups, setters, rotations and score progression.
+- Detection of points without touches, unusual serves and gaps in video time.
+- Analysis of individual files or complete folders.
+- SHA-256-based history and detection of files changed after validation.
+- Validation report export in `.txt` format.
+- Team inversion to a separate file, only when all mandatory data is available.
 
-------------------------------------------------------------------------
+![ZoneMap tactical overlay controls](https://github.com/gabriop82/ZoneMap/releases/download/v3.0.4/ZoneMap-3-Overlay.png)
 
-## 🚀 How to Use
+### 📥 Download
 
-### Calibration
+- [Official ZoneMap page in English](https://www.mia-volley.com/en/zonemap)
+- [Download the latest GitHub release](https://github.com/gabriop82/ZoneMap/releases/latest)
+- [Discover MIA Volley in English](https://www.mia-volley.com/en/)
 
-1.  Launch the app.
-2.  Drag the 6 yellow control points to match court corners and net
-    line.
-3.  Switch between:
-    -   EDIT MODE (adjust overlay)
-    -   OVERLAY MODE (click-through enabled)
+---
 
-### Standard Mode
+## System requirements
 
-Select predefined zones (1--9) for near or far court.
+- Windows 10 or Windows 11, 64-bit.
+- EXE guided installer or MSI package.
+- SHA-256 checksums included with every release.
 
-### Custom Mode
+## Distribution
 
-Use the 2D Editor to draw tactical areas.\
-Shapes are projected in real time respecting perspective.
+ZoneMap Suite is distributed as freeware. The application source code is **not publicly available**. Download and redistribution are permitted only through the original, unmodified installers.
 
-------------------------------------------------------------------------
-
-## ⌨️ Shortcuts
-
-  Key   Action
-  ----- -------------------------------
-  F8    Toggle global visibility
-  F9    Show/Hide configuration panel
-
-------------------------------------------------------------------------
-
-## 📄 License
-
-ZoneMap Suite is distributed as Freeware.
-
-You are allowed to: - Download and use the executable. - Share the
-original installer in its unmodified form.
-
-You are not allowed to: - Modify, decompile, reverse engineer, or
-attempt to reconstruct the source code. - Redistribute modified
-versions. - Use the software for commercial purposes without written
-authorization.
-
-The source code is not publicly available.
-
-© 2025 Gabrio Piozzi. All rights reserved.
-
-------------------------------------------------------------------------
-
-# 🇮🇹 Versione Italiana
-
-## 🎯 Panoramica
-
-ZoneMap Suite è un overlay tattico avanzato per l'analisi video nel
-volley.
-
-La prospettiva della telecamera può alterare la percezione spaziale e
-rendere meno precisa l'interpretazione delle zone.\
-ZoneMap fornisce un overlay prospetticamente corretto, allineato al
-campo in tempo reale.
-
-------------------------------------------------------------------------
-
-<p align="center">
-  <img src="preview.png" width="900">
-</p>
-
-------------------------------------------------------------------------
-
-## 📊 Casi d'Uso
-
--   Analisi ricezione
--   Visualizzazione buchi difensivi
--   Studio distribuzione del palleggiatore
--   Identificazione zone di conflitto
--   Evidenziazione aree tattiche
-
-Progettato per utilizzo operativo reale in gara e in preparazione
-partita.
-
-------------------------------------------------------------------------
-
-## 🚀 Funzionalità
-
-### V1 -- Overlay Prospettico
-
--   Griglia deformabile 3x3
--   Correzione prospettica tramite omografia
--   Overlay sempre in primo piano
--   Modalità click-through
-
-### V2 -- ZoneMap Suite
-
--   Editor Tattico 2D
--   Proiezione prospettica in tempo reale
--   Supporto multilingua
--   Salvataggio configurazioni JSON
--   Ottimizzazione DPI
--   Sistema feedback integrato
--   Scorciatoie F8 / F9
-
-------------------------------------------------------------------------
-
-## 🛠 Architettura Tecnica
-
--   Trasformazioni tramite matrici di omografia (numpy)
--   GUI sviluppata con PySide6 (Qt for Python)
--   Integrazione Windows tramite pywin32
--   Persistenza configurazioni in JSON (AppData)
--   Struttura modulare per Work Package
--   Documentazione tecnica per ciascun WP
-
-------------------------------------------------------------------------
-
-## 🧠 Approccio di Sviluppo
-
-Il progetto applica metodologie strutturate allo sviluppo rapido:
-
--   Triplo Vincolo (Tempo, Costo, Qualità)
--   Scomposizione tramite WBS
--   Documentazione Markdown per ogni WP
--   AI come acceleratore, non sostituto del metodo
--   Iterazioni basate su utilizzo reale
-
-Prima versione funzionante realizzata in meno di una giornata
-lavorativa.
-
-------------------------------------------------------------------------
-
-## 📥 Installazione
-
-1.  Vai alla pagina Releases:\
-    https://github.com/gabriop82/ZoneMap/releases
-2.  Scarica l'installer più recente.
-3.  Avvia l'installazione e segui le istruzioni.
-
-------------------------------------------------------------------------
-
-## 🚀 Utilizzo
-
-### Calibrazione
-
-1.  Avvia l'app.
-2.  Trascina i 6 punti gialli per allineare il campo.
-3.  Alterna tra:
-    -   MODALITÀ MODIFICA
-    -   MODALITÀ OVERLAY (click-through)
-
-### Modalità Standard
-
-Seleziona le zone 1--9 per campo vicino o lontano.
-
-### Modalità Custom
-
-Usa l'Editor 2D per disegnare aree tattiche, proiettate in tempo reale
-sul campo.
-
-------------------------------------------------------------------------
-
-## ⌨️ Scorciatoie
-
-  Tasto   Azione
-  ------- -----------------------------------------
-  F8      Attiva/Disattiva visibilità globale
-  F9      Mostra/Nasconde pannello configurazione
+© 2026 Gabrio Piozzi · [MIA Volley](https://www.mia-volley.com/)
